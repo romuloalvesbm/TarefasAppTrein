@@ -20,7 +20,7 @@ namespace TarefasApp.API.Controllers
         [ProducesResponseType(typeof(ObterTarefasQuery), 201)]
         public async Task<IActionResult> Post([FromBody] CriarTarefaCommand command)
         {
-            command.UsuarioId = Guid.Parse(User.FindFirst("jti")?.Value); //Id do usuário contido no TOKEN            
+            command.UsuarioId = Guid.Parse(User.Identity.Name); //Id do usuário contido no TOKEN           
 
             var result = await mediator.Send(command);
             return StatusCode(201, result);
