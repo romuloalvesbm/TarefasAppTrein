@@ -1,0 +1,33 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-container
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Coti@2025
+    ports:
+      - "1437:1433"
+    networks:
+      - backend
+    restart: always
+
+  mongodb:
+    image: mongo:7
+    container_name: mongodb-container
+    ports:
+      - "27018:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=secret123
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - backend
+    restart: always
+
+volumes:
+  mongo-data:
+
+networks:
+  backend:
+    driver: bridge

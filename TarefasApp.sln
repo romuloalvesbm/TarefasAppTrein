@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarefasApp.API", "TarefasApp.API\TarefasApp.API.csproj", "{2546591E-7A7E-437A-A65F-F2230760D3F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarefasApp.Infra.SqlServer", "TarefasApp.Infra.SqlServer\TarefasApp.Infra.SqlServer.csproj", "{5A5E281C-C3EC-47CA-B5BC-3AC367B014BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{380A7511-A354-6D7A-0CC0-8FA1F1BA7B6C}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarefasApp.Infra.MongoDB", "TarefasApp.Infra.MongoDB\TarefasApp.Infra.MongoDB.csproj", "{2F4AE573-2E33-4383-B45E-7807BA51A455}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2546591E-7A7E-437A-A65F-F2230760D3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2546591E-7A7E-437A-A65F-F2230760D3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2546591E-7A7E-437A-A65F-F2230760D3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2546591E-7A7E-437A-A65F-F2230760D3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5E281C-C3EC-47CA-B5BC-3AC367B014BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5E281C-C3EC-47CA-B5BC-3AC367B014BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5E281C-C3EC-47CA-B5BC-3AC367B014BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5E281C-C3EC-47CA-B5BC-3AC367B014BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F4AE573-2E33-4383-B45E-7807BA51A455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4AE573-2E33-4383-B45E-7807BA51A455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4AE573-2E33-4383-B45E-7807BA51A455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4AE573-2E33-4383-B45E-7807BA51A455}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6869D22F-5812-4B93-8650-773E6B6743C7}
+	EndGlobalSection
+EndGlobal
